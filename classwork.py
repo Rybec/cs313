@@ -8,7 +8,7 @@ def index(req):
 	d = {"key1":"Item1", "key2":"Item2", "key3":"Item3"}
 
 	for i in d.keys():
-		html = html + div(d[i], attribs = 'id="' + i +'"')
+		html = html + div(d[i], attrib = 'id="' + i +'"')
 
 
 	html = html + bodyClose()

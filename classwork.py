@@ -6,8 +6,9 @@ def index(req):
 	html = html + bodyOpen()
 
 	d = {"key1":"Item1", "key2":"Item2", "key3":"Item3"}
+	keys = d.keys()
 
-	for i in d.keys().sort():
+	for i in keys.sort():
 		html = html + div(d[i], attrib = 'id="' + i +'"')
 
 

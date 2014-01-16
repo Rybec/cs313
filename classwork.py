@@ -10,7 +10,6 @@ def index(req):
 	for i in d.keys():
 		html = html + div(d[i], attribs = 'id="' + i +'"')
 
-	html = 
 
 	html = html + bodyClose()
 	html = html + html5close()

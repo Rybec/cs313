@@ -7,8 +7,9 @@ def index(req):
 
 	d = {"key1":"Item1", "key2":"Item2", "key3":"Item3"}
 	keys = d.keys()
+	keys.sort()
 
-	for i in keys.sort():
+	for i in keys:
 		html = html + div(d[i], attrib = 'id="' + i +'"')
 
 

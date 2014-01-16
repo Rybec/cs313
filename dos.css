@@ -1,0 +1,49 @@
+@font-face {
+	font-family: Megazeux;
+	src: url('Megazeux.woff');
+	src: url('Megazeux.eot?#iefix') format('embedded-opentype'),
+	     url('Megazeux.woff') format('woff'),
+	     url('Megazeux.ttf') format('truetype');
+}
+
+.title {
+	text-align:center;
+}
+
+body {
+	background-color:black;
+	color:gray;
+	font-family:Megazeux;
+	font-size:28px;
+	line-height:28px;
+}
+
+.leftSidebar {
+	width:15%;
+	float:left;
+}
+
+.centerArea {
+	width:70%;
+	float:left;
+}
+
+.rightSidebar {
+	width:15%;
+	float:left;
+}
+
+.footer {
+	clear:both;
+}
+
+pre {
+	font-family:Megazeux;
+	font-size:28px;
+	line-height:28px;
+}
+
+a {
+	text-decoration:none;
+	color:gray;
+}

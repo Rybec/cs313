@@ -47,3 +47,7 @@ a {
 	text-decoration:none;
 	color:gray;
 }
+
+a:hover {
+	box-shadow:0px 0px 1px #444400;
+}

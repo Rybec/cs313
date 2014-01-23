@@ -9,7 +9,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 assignments = [
 #	(text (Max 20 characters), href)
 	("HOME_PAGE", "home.py"),
-	("PYTHON_SURVEY", "vote/"),
+	("PYTHON_SURVEY", "vote/index.py"),
 ]
 
 # os.stat().st_ctime  Create time

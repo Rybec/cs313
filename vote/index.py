@@ -4,11 +4,11 @@ import voteForm
 import results
 
 def index(req):
-	html = html5open() + head("Ben Williams' Votes Page", css = "main.css")
+	html = html5open() + head("Ben Williams' Votes Page", css = "../main.css")
 	html = html + bodyOpen()
 
 	# Header/title
-	html = html + div(img("BLLogo3d_small.png"), attrib='class="logo"')
+	html = html + div(img("../BLLogo3d_small.png"), attrib='class="logo"')
 	html = html + div("<h1>Ben Williams' Home Page</h1>", attrib='class="title"')
 
 	# Left side navigation menu

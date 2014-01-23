@@ -8,8 +8,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 # List of assignments
 assignments = [
 #	(text (Max 20 characters), href)
-	("HOME_PAGE", "home.py")
-	("PYTHON_SURVEY", "vote/")
+	("HOME_PAGE", "home.py"),
+	("PYTHON_SURVEY", "vote/"),
 ]
 
 # os.stat().st_ctime  Create time

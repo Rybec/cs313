@@ -80,3 +80,7 @@ pre {
 h4 {
 	text-align:center;
 }
+
+table.side th {
+	text-align:right;
+}

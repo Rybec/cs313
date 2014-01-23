@@ -12,7 +12,7 @@ def index(req):
 	html = html + div("<h1>Ben Williams' Home Page</h1>", attrib='class="title"')
 
 	# Left side navigation menu
-	menu = anchor("Assignments", "index.py")
+	menu = anchor("Assignments", "../index.py")
 
 	html = html + div("<h4>Menu</h4>" + menu, attrib='class="leftSidebar"')
 

@@ -49,5 +49,5 @@ a {
 }
 
 a:hover {
-	box-shadow:0px 0px 10px #444400;
+	color:green;
 }

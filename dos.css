@@ -12,7 +12,7 @@
 
 body {
 	background-color:black;
-	color:gray;
+	color:#AAAAAA;  /* CGA Light Gray */
 	font-family:Megazeux;
 	font-size:28px;
 	line-height:28px;
@@ -45,9 +45,9 @@ pre {
 
 a {
 	text-decoration:none;
-	color:gray;
+	color:#AAAAAA;  /* CGA Light Gray */
 }
 
 a:hover {
-	color:green;
+	color:#00AA00;  /* CGA Green */
 }

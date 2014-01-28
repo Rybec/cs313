@@ -14,14 +14,14 @@ def index(req):
 	if ("prop" in req.form.keys() and
 	    "vote" not in Cookie.get_cookies(req).keys()):
 		myVote = h(4, "You voted for " + req.form["prop"])
-		with open("votes.txt", "a") as file:
+		with open("../data/votes.txt", "a") as file:
 			file.write(req.form["prop"] + "\n")
 		cookie = Cookie.Cookie('vote', req.form["prop"])
 		cookie.expires = time.time() + 3600 # An hour
 		Cookie.add_cookie(req, cookie)
 
 	votes = ""
-	with open("votes.txt", "r") as file:
+	with open("../data/votes.txt", "r") as file:
 		votes = file.read()
 
 	tally = {}

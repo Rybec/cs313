@@ -9,6 +9,8 @@ def index(req):
 	# This changes the working directory to the directory this file is in.
 	os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+
+	return os.getcwd()
 	# Center content area
 	myVote = ""
 	if ("prop" in req.form.keys() and

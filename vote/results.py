@@ -7,7 +7,7 @@ def index(req):
 
 	# Apache does not run the script from the directory it is in.
 	# This changes the working directory to the directory this file is in.
-	os.chdir(os.path.dirname(os.path.abspath(__file__)) + "../data")
+	os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/../data")
 
 
 	return os.getcwd()

@@ -65,8 +65,8 @@ def textarea(name = "", value = "", rows = "", cols = ""):
 	       '></textarea>'
 	       
 
-def submit(name = "", attrib = ""):
-	return input("submit", value = "Submit")
+def submit(name = "", attrib = ""; value = "Submit"):
+	return input("submit", value)
 
 
 def input(type, name = "", value = "", attrib = ""):

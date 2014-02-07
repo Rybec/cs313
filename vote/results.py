@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/home/pi/public_html/libs')
 from mod_python import Cookie
 from web import *
 import time

@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/home/pi/public_html/libs')
 from web import *
 
 def index(req):

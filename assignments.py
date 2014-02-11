@@ -10,6 +10,7 @@ assignments = [
 #	(text (Max 20 characters), href)
 	("HOME_PAGE", "home.py"),
 	("PYTHON_SURVEY", "vote/index.py"),
+	("ANTS_GAME", "../ants/index.py"),
 ]
 
 # os.stat().st_ctime  Create time

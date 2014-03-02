@@ -11,6 +11,7 @@ assignments = [
 	("HOME_PAGE", "home.py"),
 	("PYTHON_SURVEY", "vote/index.py"),
 	("ANTS_GAME", "../ants/index.py"),
+	("HELLO_SERVLET", "helloServ.html"),
 ]
 
 # os.stat().st_ctime  Create time

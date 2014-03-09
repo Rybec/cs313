@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 
 public class Auth
 {
-   static String filename = "/home/rybec/www/forum.auth";
+   static String filename = "/home/pi/public_html/forum/forum.auth";
 
    public static String auth(String username, String password)
       throws IOException

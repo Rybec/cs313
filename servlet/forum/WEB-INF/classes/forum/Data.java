@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Data
 {
-   String filename = "/home/rybec/www/forum.posts";
+   String filename = "/home/pi/public_html/forum/forum.posts";
 
    public Post[] getPosts()
       throws IOException

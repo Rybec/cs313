@@ -1,0 +1,1 @@
+javac -classpath /usr/share/tomcat7/lib/servlet-api.jar Forum.java List.java Data.java Post.java Auth.java NewPost.java

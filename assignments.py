@@ -13,6 +13,7 @@ assignments = [
 	("ANTS_GAME", "../ants/index.py"),
 	("HELLO_SERVLET", "helloServ.html"),
 	("FORUM_SERVLET", "forumServ.html"),
+	("DRAG_&_DROP", "d&d.html"),
 ]
 
 # os.stat().st_ctime  Create time

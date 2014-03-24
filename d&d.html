@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D&D (not what you are thinking</title>
+  <script>
+    function allowDrop(e) {
+      e.preventDefault();
+    }
+
+    function drag(e) {
+      e.dataTransfer.setData("Drag", e.target.id);
+    }
+
+    function drop1(e) {
+      e.preventDefault();
+      var data = e.dataTransfer.getData("Drag");
+      var droptarget = document.getElementById("left");
+
+      // data.parentNode is undefined while dragging
+      if (data.parentNode != droptarget)
+      {
+        droptarget.appendChild(document.getElementById(data));
+        document.getElementById("notifications").innerHTML += "Moved " + data + " to left<br/>";
+      }
+    }
+
+    function drop2(e) {
+      e.preventDefault();
+      var data = e.dataTransfer.getData("Drag");
+      document.getElementById("right").appendChild(document.getElementById(data));
+      document.getElementById("notifications").innerHTML += "Moved " + data + " to right<br/>";
+    }
+  </script>
+  <style>
+    div.left {
+      float:left;
+      width:40%;
+      height:400px;
+      padding:10px;
+      margin:5px;
+      border:1px solid #aaaaaa;
+    }
+
+    div.right {
+      float:left;
+      width:40%;
+      height:400px;
+      padding:10px;
+      margin:5px;
+      border:1px solid #aaaaaa;
+    }
+
+    img {
+      margin:2px;
+    }
+
+    #notifications {
+      clear:both;
+    }
+  </style>
+</head>
+<body>
+  <div id="left" class="left" ondrop="drop1(event)" ondragover="allowDrop(event)">
+    <img id="Medium" src="BLLogo3d_small.png" draggable="true" ondragstart="drag(event)" width="80" height="60"/>
+    <img id="Large" src="BLLogo3d_small.png" draggable="true" ondragstart="drag(event)" width="160" height="120"/>
+    <img id="Small" src="BLLogo3d_small.png" draggable="true" ondragstart="drag(event)" width="40" height="30"/>
+  </div>
+  <div id="right" class="right" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+  <div id="notifications"></div>
+</body>
+</html>
